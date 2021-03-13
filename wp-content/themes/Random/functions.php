@@ -1,6 +1,12 @@
 <?php
 
-
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+//adds dynamic title tag support
+function Random_Theme_Support(){
+	add_theme_support('title-tag');
+}
+add_action('after_setup_theme','Random_Theme_Support');
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 							// This function makes it so that we can load the CSS/Tailwind in automatically
@@ -16,8 +22,6 @@ function random_register_styles(){
 add_action( 'wp_enqueue_scripts', 'random_register_styles');
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-
-
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 							// This removeds the stupid admin bar that was originally in the code
 function hide_admin_bar_from_front_end(){
@@ -27,6 +31,16 @@ function hide_admin_bar_from_front_end(){
 	return false;
   }
   add_filter( 'show_admin_bar', 'hide_admin_bar_from_front_end' );
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+function random_register_scripts(){
+
+	wp_enqueue_script('Main-Javascript', get_template_directory_uri() . "/js/mainJavascript.js", array(), '1.0', true);
+	
+}
+
+add_action( 'wp_enqueue_scripts', 'random_register_scripts');
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 

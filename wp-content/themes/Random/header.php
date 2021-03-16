@@ -6,5 +6,5 @@
 		
 		<?php wp_head();?> 
 		<!--^^^^^  this is loads all the function.php stuff into the page ^^^^^ -->
-
+            
 	</head>

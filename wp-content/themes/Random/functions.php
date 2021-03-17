@@ -9,6 +9,20 @@ add_action('after_setup_theme','Random_Theme_Support');
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+//Creates a "Menus section under appearance in wordpress backend
+function random_menus() {
+
+	$locations = array(
+		'primary' => "Desktop primary",
+		'footer' => "Footer Menu Items"
+	);
+
+	register_nav_menus($locations);
+}
+add_action('init','random_menus');
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 							// This function makes it so that we can load the CSS/Tailwind in automatically
 function random_register_styles(){
 

@@ -5,6 +5,5 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<?php wp_head();?> 
-		<!--^^^^^  this is loads all the function.php stuff into the page ^^^^^ -->
-            
+		<!--^^^^^  this is loads all the function.php stuff into the page ^^^^^ -->     
 	</head>

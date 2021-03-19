@@ -14,7 +14,7 @@
 							'container' => '',
 							'theme_location' => 'primary',
 							//I can edit the menu tailwind css here (in the video he shows a different way to add css, but tailwind works perfectly)
-							'items_wrap' => '<ul id="" class="flex space-x-4 ">%3$s</ul>'
+							'items_wrap' => '<ul id="" class="flex space-x-4 hover">%3$s</ul>'
 							)
 						);
 			?>

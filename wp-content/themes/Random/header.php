@@ -7,9 +7,3 @@
 		<?php wp_head();?> 
 		<!--^^^^^  this is loads all the function.php stuff into the page ^^^^^ -->     
 	</head>
-
-	<body>
-		<div class="flex space-x-4">
-			
-		</div>
-	</body>

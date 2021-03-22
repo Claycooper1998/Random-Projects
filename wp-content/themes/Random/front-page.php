@@ -1,30 +1,28 @@
+<?php
+get_header();
+?>
 
-
-
-<body class="bg-gray-500">
-
-	<?php get_header(); ?>
-	<?php include 'top.php';?>
-	<?php include 'nav.php';?>
+	<article>
 	
-	<div class="bg-white rounded-md py-5 px-5 m-10">
-		<p class="text-center pb-2 font-bold text-2xl">About This Website</p>
+	<?php
+		if( have_posts() ){
 
-		<p class="text-left pb-2 text-xl">  This is the content page where lots of code should be tested and posted. 
-			This is a good spot to show off past projects while also using this a working spot for new projects currently being worked on.
-		</p>
-	</div>
-	<div class="flex">
-		<div class="bg-white rounded-md py-5 px-5 mx-10 flex-1">
-			<p class="text-center">Project 1</p>
-		</div>
-		<div class="bg-white rounded-md py-5 px-5 mx-10 flex-1">
-		<p class="text-center">Project 2</p>
-		</div>
-	</div>
+			while( have_posts() ){
 
-</body>
+				//this gets the posts we make in wordpress and displays them
+				the_post();
+				//this will get the content inside of the pages and display them on the page (dynamic)
+				the_content();
+			}
+		}
 
+	?>
 
-	<?php wp_footer(); ?>
-</html>
+	
+	</article>
+	
+
+	<?php
+	get_footer();
+	?>
+

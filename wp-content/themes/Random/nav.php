@@ -17,7 +17,7 @@
 							'items_wrap' => '<ul id="" class="flex space-x-4 hover">%3$s</ul>'
 							)
 						);
-			?>
+			      ?>
           </div>
         </div>
       </div>

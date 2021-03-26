@@ -1,5 +1,7 @@
 <?php
 
+
+
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 //adds dynamic title tag support
 function Random_Theme_Support(){
@@ -57,6 +59,4 @@ function random_register_scripts(){
 add_action( 'wp_enqueue_scripts', 'random_register_scripts');
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-
-?>
 

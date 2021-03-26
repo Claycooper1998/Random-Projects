@@ -5,22 +5,20 @@
         <div class="flex-shrink-0">
         </div>
         <div class="hidden sm:block sm:ml-6">
-          <div class="">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <?php
-						wp_nav_menu(
-							array(
-							'menu' => 'primary',
-							'container' => '',
-							'theme_location' => 'primary',
-							//I can edit the menu tailwind css here (in the video he shows a different way to add css, but tailwind works perfectly)
-							'items_wrap' => '<ul id="" class="flex space-x-4 hover">%3$s</ul>'
-							)
-						);
-			      ?>
+          <div class="hidden md:ml-6 md:flex md:items-center md:space-x-4">
+            <a href="page2.php" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">link for page 2</a>
+
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
           </div>
         </div>
       </div>
+
+
+
       
       <div class="-mr-2 flex sm:hidden">
         <!-- Mobile menu button -->

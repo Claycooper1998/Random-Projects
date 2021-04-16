@@ -8,7 +8,7 @@
           <div class="hidden md:ml-6 md:flex md:items-center md:space-x-4">
 
           <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home Page</a>
-            <a href="/RPS" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">testing page</a>
+            <a href="/RPS" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">RPS</a>
 
 
 

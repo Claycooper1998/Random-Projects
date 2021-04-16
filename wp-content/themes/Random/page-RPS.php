@@ -14,7 +14,7 @@
 		</div>
 	</div>
 
-	<div>
+	<div class="result">
 		<p class="text-center text-6xl text-white pt-4 pb-8">Paper covers rock. You Win!</p>
 	</div>
 
@@ -38,12 +38,12 @@
 	<script>
 		
 		// Cashing the DOM... meaning we will be using these elements later and we can create a shortcut to grab it easily
-		const userScore = 0;
-		const computerScore = 0;
+		let userScore = 0;
+		let computerScore = 0;
 		const userScore_span = document.getElementById("user-score");
 		const computerScore_span = document.getElementById("computer-score");
 		const scoreBoard_div = document.querySelector(".score-board");
-		const result_div = document.querySelector(".result");
+		const result_p = document.querySelector(".result > p");
 		const rock_div = document.getElementById("r");
 		const paper_div = document.getElementById("p");
 		const scissors_div = document.getElementById("s");
@@ -51,12 +51,55 @@
 
 		function getComputerChoice() {
 			const choices = ['r','p','s'];
-			console.log(Math.random() * 3);
+			const randomNumber = Math.floor(Math.random() * 3);
+			return choices[randomNumber];
 		}
-		getComputerChoice();
+
+		function convertToWord(letter) {
+			if (letter === "r") return "Rock";
+			if (letter === "p") return "Paper";
+			return "Scissors";
+		}
+
+		function win(userChoice, computerChoice) {
+			userScore++;
+			userScore_span.innerHTML = userScore;
+			computerScore_span.innerHTML = computerScore;
+			result_p.innerHTML = convertToWord(userChoice) + " beats " + convertToWord(computerChoice) + ". You Win!";
+		}
+
+		function loss(userChoice, computerChoice) {
+			computerScore++;
+			userScore_span.innerHTML = userScore;
+			computerScore_span.innerHTML = computerScore;
+			result_p.innerHTML = convertToWord(userChoice) + " loses to " + convertToWord(computerChoice) + ". You lost";
+		}
+
+		function tie(userChoice, computerChoice) {
+			userScore_span.innerHTML = userScore;
+			computerScore_span.innerHTML = computerScore;
+			result_p.innerHTML = convertToWord(userChoice) + " equals " + convertToWord(computerChoice) + ". It's a tie";
+		}
 
 		function game(userChoice) {
-			console.log("HELLO" + userChoice);
+			const computerChoice = getComputerChoice();
+			switch (userChoice + computerChoice) {
+				case "rs":
+				case "pr":
+				case "sp":
+					win(userChoice, computerChoice);
+					break;
+				case "rp":
+				case "ps":
+				case "sr":
+					loss(userChoice, computerChoice);
+					break;	
+				case "rr":
+				case "pp":
+				case "ss":
+					tie(userChoice, computerChoice);
+					break;		
+				}
 		}
 
 		function main() {

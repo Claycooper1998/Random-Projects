@@ -1,7 +1,7 @@
 <?php include "header.php";?>
 
 	<header>
-		<h1 class="text-center text-2xl my-5">Rock Paper Scissors</h1>
+		<h1 class="text-center text-white text-2xl my-5">Rock Paper Scissors</h1>
 	</header>
 
 
@@ -15,7 +15,7 @@
 	</div>
 
 	<div class="result">
-		<p class="text-center text-6xl text-white pt-4 pb-8">Paper covers rock. You Win!</p>
+		<p class="text-center text-6xl text-white pt-4 pb-8">Click the choices to play!</p>
 	</div>
 
 	<!-- These are the choices you can pick from -->
@@ -33,6 +33,11 @@
 
 	<p id="action-message" class="text-center pt-5 text-2xl text-white">Make your move!</p>
 
+	<div class="text-center text-white text-2xl pt-2">
+		<p class="pb-2">Clear Scores</p>
+		<div id="clearScores" class="m-auto w-10 h-10 bg-black cursor-pointer"></div>
+	</div>
+
 
 
 	<script>
@@ -47,7 +52,15 @@
 		const rock_div = document.getElementById("r");
 		const paper_div = document.getElementById("p");
 		const scissors_div = document.getElementById("s");
+		const clearAll = document.getElementById("clearScores").addEventListener("click", clear);
 
+		function clear() {
+			userScore = 0;
+			computerScore = 0;
+			userScore_span.innerHTML = 0;
+			computerScore_span.innerHTML = 0;
+			result_p.innerHTML = "New Game!";
+		}
 
 		function getComputerChoice() {
 			const choices = ['r','p','s'];
@@ -80,6 +93,8 @@
 			computerScore_span.innerHTML = computerScore;
 			result_p.innerHTML = convertToWord(userChoice) + " equals " + convertToWord(computerChoice) + ". It's a tie";
 		}
+
+		
 
 		function game(userChoice) {
 			const computerChoice = getComputerChoice();
@@ -115,6 +130,7 @@
 			scissors_div.addEventListener("click", function() {
 				game("s");
 			})
+
 
 		}
 

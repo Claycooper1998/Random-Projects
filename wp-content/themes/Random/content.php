@@ -8,9 +8,9 @@
 	</p>
 </div>
 <div class="flex">
-	<div class="bg-white rounded-md py-5 px-5 mx-10 flex-1">
-		<p class="text-center">Project 1</p>
-	</div>
+	<a href="/RPS" class="bg-white rounded-md py-5 px-5 mx-10 flex-1">
+		<p class="text-center">Rock, Paper, Scissors</p>
+	</a>
 	<div class="bg-white rounded-md py-5 px-5 mx-10 flex-1">
 		<p class="text-center">Project 2</p>
 	</div>

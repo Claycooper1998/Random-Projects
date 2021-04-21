@@ -30,8 +30,17 @@
                 <p>- supports almost all databases</p>
                 <p>- easy to learn and runs efficiently on the server side</p>
         </div>
-        <h1 class="text-xl py-2">Install</h1>
+        <h1 class="text-xl py-2">Syntax</h1>
         <div class="bg-gray-400 p-1">
+            <p>- a PHP script is executed on the server, and the plain HTML result is sent badck to the browser</p>
+            <p>- A PHP script always start  with <span class="text-red-500">&lt;?php</span> and ends with <span class="text-red-500">?&gt;</span></p>
+            <p>- A PHP file normally has HTML tags in it, and also PHP scripting code</p>
+            <p>- PHP has the function "echo" that outputs the text inside of it. Example:</p>
+            <p class="text-black">&lt;?php echo "Hello World"; ?&gt;</p>
+            <p>This will display "Hello World" as regular text. Just make sure to end it with a semicolon ;</p>
+            <h1 class="font-bold text-black">PHP Case Sensitivity</h1>
+            <p>- Keywords, classes, functions, and user-defined functions like: if, else, while, echo, etc. are <span class="text-black font-semibold">NOT</span> case-sensitive</p>
+            
         </div>
         
         

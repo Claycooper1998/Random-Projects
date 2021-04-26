@@ -71,6 +71,18 @@
             <p>- A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function</p>
             <p> the word "global" can be used inside of a function to be able to use a a variable from outside</p>
             <p>- Naturally, PHP holds all global variables in an array call $GLOBALS[index] and can access any global variable by using $GLOBALS["name"]</p>
-            <p>- The Scope static helps make sure no variables are deleted after the execution of the code</p>
+            <p>- The Scope static helps make sure no variables are deleted after the execution of the code and is still local to the function</p>
+        </div>
+        <h1 class="text-xl py-2">echo and Print statements</h1>
+        <div class="bg-gray-400 p-1">
+            <p>There are two baisc outputs for PHP: echo and print</p>
+            <p>echo can take multiple parameters and is faster and print can only take one</p>
+            <p>echo can be used with or without parentheses: echo or echo()</p>
+            <p>with echo, you can implement CSS into it</p>
+            <p>print can be used with or without parentheses: print or print()</p>
+        </div>
+        <h1 class="text-xl py-2">echo and Print statements</h1>
+        <div class="bg-gray-400 p-1">
+
         </div>
     </div>

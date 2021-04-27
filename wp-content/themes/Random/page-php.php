@@ -78,10 +78,23 @@
             <p>There are two baisc outputs for PHP: echo and print</p>
             <p>echo can take multiple parameters and is faster and print can only take one</p>
             <p>echo can be used with or without parentheses: echo or echo()</p>
-            <p>with echo, you can implement CSS into it</p>
+            <p>with echo, you can implement CSS into it</p>w
             <p>print can be used with or without parentheses: print or print()</p>
         </div>
-        <h1 class="text-xl py-2">echo and Print statements</h1>
+        <h1 class="text-xl py-2">Data Types</h1>
+        <div class="bg-gray-400 p-1">
+            <p> there are 8 different data types :</p>
+            <p>String, Integer, Float, Boolean, Array, Object, NULL, Resource</p>
+            <p>1. String - Sequence of characters</p>
+            <p>2. Integer - non-decimal number, must have one digit, no decimal point, can be both positive and negative</p>
+            <p>3. Float - A number with a decimal point or exponential form</p>
+            <p>4. Boolean - True or False</p>
+            <p>5. Array - Storage of multiple values in a single variable</p>
+            <p>6. Object - Classes and Objecrs are the two main aspects of object-oriented programming</p>
+            <p>7. NULL - No value is assigned to it. You can empty a value by setting it to NULL</p>
+            <p>8. Resource - Not an actual data type, it is the storing of a reference to functons and resources exernal to PHP (a database call)</p>
+        </div>
+        <h1 class="text-xl py-2">Strings</h1>
         <div class="bg-gray-400 p-1">
 
         </div>

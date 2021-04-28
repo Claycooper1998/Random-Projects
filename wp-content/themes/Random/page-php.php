@@ -96,6 +96,63 @@
         </div>
         <h1 class="text-xl py-2">Strings</h1>
         <div class="bg-gray-400 p-1">
-
+            <p>- A string is a sequence of characters</p>
+            <p>- The PHP strlen() function returns the length of a string</p>
+            <p>&lt;?php echo echo strlen("Hello world!"); ?&gt;</p>
+            <p>- it shows an output of 12</p>
+            <p>- The PHP str_word_count() function counts the number of words in a string.</p>
+            <p>&lt;?php echo str_word_count("Hello world!"); ?&gt;</p>
+            <p>- it has a output of 2 because there are two words</p>
+            <p>- The PHP strrev() function reverses a string.</p>
+            <p>&lt;?php echo strrev("Hello world!"); ?&gt;</p>
+            <p>- this will have an outputs of !dlrow olleH</p>
+            <p>- The PHP strpos() function searches for a specific text within a string. If a match is found, the function returns the character position of the first match. If no match is found, it will return FALSE.</p>
+            <p>-&lt;?php echo strpos("Hello world!", "world"); ?&gt;</p>
+            <p>- This outputs 6</p>
+            <p>- The PHP str_replace() function replaces some characters with some other characters in a string.</p>
+            <p>- &lt;?php echo str_replace("world", "Dolly", "Hello world!"); ?&gt;</p>
+            <p>- the outputs "Hello Dolly!"</p>
+        </div>
+        <h1 class="text-xl py-2">Numbers</h1>
+        <div class="bg-gray-400 p-1">
+            <p>One thing to notice about PHP is that it provides automatic data type conversion. This can be bad and sometimes break code</p>
+        </div>
+        <h1 class="text-xl py-2">Math</h1>
+        <div class="bg-gray-400 p-1">
+            <p>There are many functions in math, pi(), min(), max(), abs(), and many more that are natural to regular math problems</p>
+            <p>rand() will generate a random number you can set a limit to where the numbers will generate from rand(number, number)</p>
+            <p>There is a complete list of math functions</p>
+        </div>
+        <h1 class="text-xl py-2">Constants</h1>
+        <div class="bg-gray-400 p-1">
+            <p>Constants are like variables except that once they are defined they cannot be changed or undefined.</p>
+            <p>Unlike variables, constants are automatically global across the entire script.</p>
+            <p>To create a constant, use the define() function.</p>
+            <P>"define(name, value, case-insensitive)"</P>
+            <P>Parameters: </P>
+            <p>name: Specifies the name of the constant</p>
+            <p>value: Specifies the value of the constant</p>
+            <p>case-insensitive: Specifies whether the constant name should be case-insensitive. Default is false</p>
+            <p>You can even create an Array in a define()</p>
+        </div>
+        <h1 class="text-xl py-2">Operators</h1>
+        <div class="bg-gray-400 p-1">
+            <p>Operators are used to perform operations on variables and values.</p>
+            <p>These operators are similar to Javascript and other programming languages</p>
+            <p>The basic assignment operator in PHP is "=". It means that the left operand gets set to the value of the assignment expression on the right.</p>
+            <p> == means equal</p>
+            <p> === means identical</p>
+            <p> !== means not identical</p>
+            <p> !=  not equal</p>
+            <p> ++$x is a pre-increment which means it adds 1 to x</p>
+            <p> --$x is a pre-decrement which takes away 1 form x</p>
+            <p> "&&" "and", $x and/&& $y means that both x and y are true</p>
+            <p> "or" "||", $x or/|| $y means either x or y is true, one or the other</p>
+            <p> "xor" means $x xor $y, means true if either $x or $y is true, but not both</p>
+            <p> !  means not, !$x true if x is not true</p>
+        </div>
+        <h1 class="text-xl py-2">if...else...elseif Statements</h1>
+        <div class="bg-gray-400 p-1">
+            
         </div>
     </div>

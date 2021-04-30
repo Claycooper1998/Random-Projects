@@ -153,6 +153,109 @@
         </div>
         <h1 class="text-xl py-2">if...else...elseif Statements</h1>
         <div class="bg-gray-400 p-1">
-            
+            <p>Conditional statements are used to perform different actions based on different conditions.</p>
+            <p>"if" statement - executes some code if one condition is true</p>
+            <p>if (condition) { code to be executed if condition is true;   }</p>
+            <p>"if... else" statement - exectues some code if a condition is true and another code if that condition is false</p>
+            <p>if (condition) { code to be executed if condition is true;   } else {    code to be executed if condition is false;  }</p>
+            <p>"if...elseif...else" statement - executes different codes for more than two conditions</p>
+            <p>if (condition) { code to be executed if this condition is true;    } elseif (condition) {  code to be executed if first condition is false and this condition is true;   } else {    code to be executed if all conditions are false;  }</p>
+            <p>"switch" statement - selects one of many blocks of code to be executed</p>
+        </div>
+        <h1 class="text-xl py-2">Switch Statements</h1>
+        <div class="bg-gray-400 p-1">
+            <p>Use the switch statement to select one of many blocks of code to be executed.</p>
+        </div>
+        <h1 class="text-xl py-2">Loops</h1>
+        <div class="bg-gray-400 p-1">
+            <p>When writting code, sometimes you want to run that code over and over again for a certain number of times, so instead of adding several number of lines of code, you can just write a simple loop</p>
+            <p>Types of loops:</p>
+            <p>while - loops through a block of code while a condition is true</p>
+            <p>do...while - loops though a block of code once, then repeats that block creating a loop while the condition is true</p>
+            <p>for - loops through a block of code for a specific number of times</p>
+            <p>foreach - loops through a block of code for each element in an array</p>
+        </div>
+        <h1 class="text-xl py-2">while loop</h1>
+        <div class="bg-gray-400 p-1">
+            <p>while (condition is true) {</p>
+            <p>code to be executed;</p>
+            <p>}</p>
+        </div>
+        <h1 class="text-xl py-2">do...while loop</h1>
+        <div class="bg-gray-400 p-1">
+            <p>do {</p>
+            <p>code to be executed;</p>
+            <p>} while (codition is true);</p>
+        </div>
+        <h1 class="text-xl py-2">for loop</h1>
+        <div class="bg-gray-400 p-1">
+            <p>for (init counter; test counterl increment counter) {</p>
+            <p>code to be executed for each iteration;</p>
+            <p>}</p>
+        </div>
+        <h1 class="text-xl py-2">foreach loop</h1>
+        <div class="bg-gray-400 p-1">
+            <p>foreach ($array as $value) {</p>
+            <p>code to be executed;</p>
+            <p>}</p>
+        </div>
+        <h1 class="text-xl py-2">break and continue</h1>
+        <div class="bg-gray-400 p-1">
+            <p>The break statement is used to jump out of a loop</p>
+            <p>The continue statement skips/breaks one iteration in the loop then continues with the rest</p>
+        </div>
+        <h1 class="text-xl py-2">Functions</h1>
+        <div class="bg-gray-400 p-1">
+            <p>This is where the main power in PHP comes from</p>
+            <p>There are more than 1000 built-in functions</p>
+            <p>- a function is a block of statements that can be used repeatedly in a program</p>
+            <p>- a function will not execute automatically when a page loads</p>
+            <p>- a function will be executed when it is called</p>
+            <p>Creating a function : </p>
+            <p>function functionName() {</p>
+            <p>code to be executed;</p>
+            <p>}</p>
+            <p>information can be passed to functions through arguments. An argument is just like a variable</p>
+            <p>Arguments are specified after the function name, inside of the parentheses. You can add as many argumetns as you want. just separate them with a comma</p>
+            <p>W3Schools has a good example of using <a class="text-black" href="https://www.w3schools.com/php/php_functions.asp"> arguments</a></p>
+        </div>
+        <h1 class="text-xl py-2">Arrays</h1>
+        <div class="bg-gray-400 p-1">
+            <p>An array stores multiple values in one single variable</p>
+            <p>There are many useful functions that can help explore arrays</p>
+            <p>the count() function us used to return the length or the number of elements in the array</p>
+            <p>To many an array:</p>
+            <p>$name = array(information);</p>
+        </div>
+        <h1 class="text-xl py-2">Associative Arrays</h1>
+        <div class="bg-gray-400 p-1">
+            <p>Associative arrays are arrays that use named keys that you assign to them</p>
+            <P>$age = array("Clayton"=>"22", "Jasmine"=>"22");</P>
+            <p>or</p>
+            <p>$age["Clayton"] = "22";</p>
+            <p>$age["Jasmine"] = "22";</p>
+            <p>you can loop through this information with a foreach loop</p>
+        </div>
+        <h1 class="text-xl py-2">Sorting Arrays</h1>
+        <div class="bg-gray-400 p-1">
+            <p>You can sort arrays alphabetically, numerically, descending or ascending</p>
+            <P>sore() - sorts arrays in ascending order</P>
+            <p>rsort() - sort arrays in descending order</p>
+            <p>asort(), ksort(), arsort(), krsort() are all sorting functions for associative arrays</p>
+        </div>
+        <h1 class="text-xl py-2">Global Variables - Superglobals</h1>
+        <div class="bg-gray-400 p-1">
+            <p>Built-in variables that are always available in all scopes</p>
+            <p>The PHP superglobal variables are:</p>
+            <p>$GLOBALS - a superglobal variable which is used to acces global variables from anywhere in the PHP script, functions, or methods</p>
+                <p>PHP stores all global variables in an array called $GLOBALS[index]. The index holds the name of the variable</p>
+            <p>$_SERVER - holds information about headers, paths, and script locations. There is a long list of options to look for about the server</p>
+            <p>$_REQUEST - This is a variable that collects data after submitting an HTML form</p>
+            <p>$_POST - Used to collect form data after submitting an HTML form with method="post"</p>
+            <p>$_GET - Used to collect form data after submitting an HTML form with method="get". It can collect data sent in the URL</p>
+            <p>$_FILES</p>
+            <p>$_ENV</p>
+            <p>$_COOKIE</p>
+            <p>$_SESSION</p>
         </div>
     </div>
